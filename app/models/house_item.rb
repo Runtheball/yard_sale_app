@@ -1,0 +1,2 @@
+class HouseItem < Item
+end
