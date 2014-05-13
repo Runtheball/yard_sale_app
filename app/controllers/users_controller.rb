@@ -15,8 +15,7 @@ class UsersController < ApplicationController
     @new_user = User.new(user_params)
     if @new_user.save
       #tell the UserMailer to send a welcome email
-      UserMailer.welcome_email(@new_user)
-      redirect_to login_path(@new_user), notice: "Yeehaw! Thet thar's the seweeet smell of 'Signup Success''"
+      redirect_to login_path, notice: "Yeehaw! Thet thar's the seweeet smell of 'Signup Success''"
     else
       render :new, notice: "Sheeeooot! Yer Login done failed"
     end

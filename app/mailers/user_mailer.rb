@@ -1,11 +1,9 @@
 class UserMailer < ActionMailer::Base
-  default from: "allsghok@gmail.com" #can be overridden within the mail(to:) line
+  default from: "tiyappmailer@gmail.com" #can be overridden within the mail(to:) line
 
   def welcome_email(user)
     @new_user = user
-    email_with_name = "#{@new_user.first_name} <#{@new_user.email}>"
-    mail(to: email_with_name, subject: "Come On In, Pardner")
-    UserMailer.new_welcome_email(user).deliver
+    mail(to: @new_user.email, subject: "Come On In, Pardner").deliver
   end
 
 
