@@ -42,14 +42,14 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                  587,
     domain:               'gmail.com',
-    user_name:            'tiyappmailer',
-    password:             'theironyard',
+    user_name:            'allsghok',
+    password:             'homer864',
     authentication:       'plain',
     enable_starttls_auto: true
 }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   #Options written in the following line will apply to ALL mailers
-  config.action_mailer.default_options = {from: 'tiyappmailer@gmail.com'}
+  config.action_mailer.default_options = {from: 'allsghok@gmail.com'}
 
 end

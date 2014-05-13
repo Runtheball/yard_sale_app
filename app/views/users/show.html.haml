@@ -1,0 +1,10 @@
+%h2 This here's all we know 'bout yuh
+%div.span9
+  %div.span9.offset3.centered
+    %br
+    = "You're logged in as " + "#{@user.first_name} #{@user.last_name}" 
+    = @user.email
+    %br
+    %div.bold
+      = link_to "logout", logout_path
+    

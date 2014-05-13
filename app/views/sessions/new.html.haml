@@ -1,0 +1,15 @@
+.col-md-6.col-md-offset-3
+  %h2.centered Ye Olde Account Login Page
+  = image_tag "howdy.gif", :class => "img-left" 
+  = form_tag sessions_path do
+    .form-group
+      = label_tag :email
+      = text_field_tag :email, params[:email]
+      = label_tag :password
+      = password_field_tag :password
+      %br
+      .input 
+        = submit_tag "Login rat cheer!"
+      %hr
+    .centered
+      = link_to "Heck-fire! I'ma gonna need tuh Register first", new_user_path

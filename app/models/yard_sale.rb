@@ -4,11 +4,12 @@ class YardSale < ActiveRecord::Base
 
 	validates_presence_of :name, :sale_date
 
-  after_create :send_new_yard_sale_to_all
+  after_create :send_new_yard_sale_to_group
 
 	scope :past_week, -> { where('sale_date > ?', 1.week.ago) }
 
-  def send_new_yard_sale_to_all
-    UserMailer.new_yard_sale_message_to_all(User.all, self)
+  def send_new_yard_sale_to_group
+    UserMailer.new_yard_sale_message_to_group(User.all, self)
   end
+  
 end

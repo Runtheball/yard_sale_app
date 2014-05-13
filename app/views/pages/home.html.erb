@@ -1,0 +1,11 @@
+<% provide(:title, '') %>
+<% provide(:jumbotron, '
+    <h1>Howdy Folks!</h1>
+    <p><img class="img-left" src="/images/howdy.gif">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+
+    <a href="/sessions/destroy/">Log me outta here!</a>
+
+'.html_safe)%>
+
+<%= link_to "logout", logout_path %>

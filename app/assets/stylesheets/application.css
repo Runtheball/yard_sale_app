@@ -10,6 +10,35 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap_and_overrides
+ *= require yard_sales
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
+       url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.img-left { 
+  float:left; 
+  margin-right:1.5em; 
+  margin-bottom:1.5em; 
+  border:3px solid brown;
+}
+
+.session-status{
+  width:45%;
+  margin:1em auto;
+  text-align: center;
+  float:left;
+  color:#2a6496;
+}
+
+.centered { text-align:center; }
+footer { clear:both; text-align: center; }

@@ -1,1 +1,6 @@
-index.html.haml
+%h2 The following yard sales are coming up...
+
+%ul
+  - @yard_sales.each do |ys|
+    %li= ys.name
+
