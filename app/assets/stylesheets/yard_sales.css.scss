@@ -19,7 +19,7 @@
 }
 
 .framed {
-  background:image_path(buckle-frame600.png) top left no-repeat;
+  background:url('buckle-frame600.png') top left no-repeat;
  
 }
 
@@ -58,7 +58,7 @@
 .flip .card .front {
     position: absolute;
     z-index: 1;
-    background: image_path(hillbilly-truck.jpg);
+    background: image_path('hillbilly-truck.jpg');
     color:#A2EC4E;
     text-shadow:1px 1px 5px #ffffff;
     cursor: pointer;
