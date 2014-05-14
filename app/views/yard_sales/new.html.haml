@@ -1,0 +1,12 @@
+%h2 Got yerself a yard sale planned? Well shit-howdy!
+%hr
+.wow-form
+  =form_for @yard_sale, url: {action: "create"}, html: {class: "new_sale_form"}  do |f|
+    %br
+    = f.label :"What yer gonna call it?"
+    = f.text_field :name
+    %br
+    = f.label :"When's it gonna be?"
+    = f.date_field :sale_date
+    %br
+    = f.submit "Git 'er done!"

@@ -1,6 +1,15 @@
-%h2 The following yard sales are coming up...
+%h2 The following yard sales are comin' up...
 
 %ul
   - @yard_sales.each do |ys|
-    %li= ys.name
+    .flip
+      .card
+        .face.front
+          = ys.name
+        .face.back
+          = ys.sale_date
+
+.centered.double-size   
+  = link_to ("Post about yer own yard sale"), new_yard_sale_path
+
 
