@@ -4,9 +4,7 @@ var ready = function() {
     $(this).hide( "slow" );
   });
 
-  $(".wow-form").mouseenter(function(){
-    $(this).toggleClass( "framed" );
-  });
+  
 
   $(".new_sale_form").on("submit", function(){
     if (this.text_field) input = " ";
@@ -34,12 +32,12 @@ var ready = function() {
 
 
 
-  $('.howdy')
+  $('.bubblewrap')
     .mouseenter(function() {
-      $('.bubble').show("slow");
+      $('.bubble').stop().show("slow");
     })
     .mouseleave(function() {
-      $('.bubble').hide("slow");
+      $('.bubble').stop().hide("slow");
     });
 };
 $(document).ready(ready);

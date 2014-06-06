@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap_and_overrides
+ *= require bootstrap.min
  *= require yard_sales
  *= require_tree .
  *= require_self
@@ -18,12 +19,14 @@
 
  @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/fonts/glyphicons-halflings-regular.eot');
-  src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
        url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
        url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
        url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+.jumbotron { width:60%; margin:0 auto; }
 
 .img-left { 
   float:left; 
@@ -43,12 +46,25 @@
 .centered { text-align:center; }
 .double-size { font-size:2em;}
 
+.form-group{
+  margin-bottom: 15px;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.form_session .form-group label { width:30%; }
+.session-submit { 
+  width:50%;
+  margin-top:.5em; 
+  margin-left:25%; 
+}
+
+.bubblewrap { position:relative; }
+
 .bubble { 
-  width:300px; 
-  height:300px; 
-  float:left;
-  margin-top: -15px; 
-  margin-left: -110px; 
+  position:absolute;
+  left:140px;
+  top:40px;
   z-index:2; 
   display:none; 
 }

@@ -2,8 +2,9 @@
 %div.span9
   %div.span9.offset3.centered
     %br
-    = "You're logged in as " + "#{@user.first_name} #{@user.last_name}" 
-    = @user.email
+    = "You're logged in as " + "#{@user.first_name} #{@user.last_name}, an' we done got yer address as " + "#{@user.email}."  
+    %br
+    = "Now you can be sure we're gonna keep this here info classified."
     %br
     %div.bold
       = link_to "logout", logout_path

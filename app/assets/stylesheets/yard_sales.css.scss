@@ -1,3 +1,5 @@
+h2 { text-align:center; }
+
 .small {
   color:red;
   font-size: 30px;
@@ -6,24 +8,35 @@
 
 .wow-form { 
   position:relative; 
+  background:url(buckle-frame600.png) top left no-repeat;
   min-height:40em;
+  width: 600px;
+  margin: -50px auto;
   }
 
 .new_sale_form { 
-  width:600px;
-  height:600px;
+  width:325px;
+  height:60px;
   position:absolute;
-  left:15%;
+  left:23%;
   top:42%;
   margin-bottom:5em;
 }
 
-.framed {
-  background:url(buckle-frame600.png) top left no-repeat;
- 
+.new_sale_form input[type="date"], .new_sale_form input[type="text"]{
+  float:right;
 }
 
+.new_sale_form input[type="submit"] {
+  width: 60%;
+  margin: 1em 0 0 20%;
+}
+
+
 /* Styles for card-flip */
+
+.cards { width:75%; margin:0 auto; padding:0; }
+
 .flip {
     -webkit-perspective: 800;
     width: 200px;
@@ -38,6 +51,7 @@
 .flip .card {
     width: 100%;
     height: 100%;
+    border: 1px solid #555;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: 0.5s;
     -moz-box-shadow: 5px 5px 5px #666666;
@@ -60,7 +74,7 @@
     z-index: 1;
     background: url(hillbilly-truck.jpg);
     color:#A2EC4E;
-    text-shadow:1px 1px 5px #ffffff;
+    text-shadow:1px 1px 5px #444;
     cursor: pointer;
 }
 .flip .card .back {
@@ -69,6 +83,6 @@
     background: white;
     color:#A2EC4E;
     font-size:2em;
-    text-shadow:1px 1px 5px #ffffff;
+    text-shadow:1px 1px 2px #444;
     cursor: pointer;
 }

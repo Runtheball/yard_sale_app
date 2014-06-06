@@ -1,12 +1,15 @@
-%h2 Got yerself a yard sale planned? Well shit-howdy!
+%h2 Got a hankerin' tuh host yerself a yard sale?
 %hr
 .wow-form
-  =form_for @yard_sale, url: {action: "create"}, html: {class: "new_sale_form"}  do |f|
+  =form_for(@yard_sale, url: {action: "create"}, html: {class: "new_sale_form", method: :post })  do |f|
     %br
     = f.label :"What yer gonna call it?"
-    = f.text_field :name
+    = f.text_field :name, :autofocus => true
+    %br
     %br
     = f.label :"When's it gonna be?"
     = f.date_field :sale_date
     %br
     = f.submit "Git 'er done!"
+
+

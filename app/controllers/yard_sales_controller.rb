@@ -1,7 +1,7 @@
 class YardSalesController < ApplicationController
 
 	def index
-		@yard_sales = YardSale.all
+		@yard_sales = YardSale.all.latest
 	end
 
 	def new
@@ -9,9 +9,9 @@ class YardSalesController < ApplicationController
 	end
 
 	def create
+		# debugger
 		@yard_sale = YardSale.new(yard_sale_params)
 		if @yard_sale.save
-			
 			redirect_to yard_sales_path
 		else
 			render :new

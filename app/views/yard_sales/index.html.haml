@@ -1,6 +1,6 @@
-%h2 The following yard sales are comin' up...
+%h2 These here yard sales are a-comin' up...
 
-%ul
+%ul.cards
   - @yard_sales.each do |ys|
     .flip
       .card
@@ -10,6 +10,6 @@
           = ys.sale_date
 
 .centered.double-size   
-  = link_to ("Post about yer own yard sale"), new_yard_sale_path
+  = link_to ("Holler about yer own yard sale"), new_yard_sale_path
 
 
