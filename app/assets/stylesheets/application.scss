@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require bootstrap.min
+ *= require yard_sales
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
+       url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.jumbotron { width:60%; margin:0 auto; }
+
+.img-left { 
+  float:left; 
+  margin-right:1.5em; 
+  margin-bottom:1.5em; 
+  border:3px solid brown;
+}
+
+.session-status{
+  width:45%;
+  margin:1em auto;
+  text-align: center;
+  float:left;
+  color:#A2EC4E;
+}
+
+.centered { text-align:center; }
+.double-size { font-size:2em;}
+
+.form-group{
+  margin-bottom: 15px;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.form_session .form-group label { width:30%; }
+.session-submit { 
+  width:50%;
+  margin-top:.5em; 
+  margin-left:25%; 
+}
+
+.bubblewrap { position:relative; }
+
+.bubble { 
+  position:absolute;
+  left:140px;
+  top:40px;
+  z-index:2; 
+  display:none; 
+}
+footer { clear:both; text-align: center; }
