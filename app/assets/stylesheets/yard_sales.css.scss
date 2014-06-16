@@ -21,15 +21,15 @@ h2 { text-align:center; }
   left:23%;
   top:42%;
   margin-bottom:5em;
-}
 
-.new_sale_form input[type="date"], .new_sale_form input[type="text"]{
+  input[type="date"], .new_sale_form input[type="text"]{
   float:right;
-}
-
-.new_sale_form input[type="submit"] {
+  }
+  
+  input[type="submit"] {
   width: 60%;
   margin: 1em 0 0 20%;
+  }
 }
 
 
