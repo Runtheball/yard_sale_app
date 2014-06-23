@@ -7,7 +7,7 @@ A skill-building project to demonstrate:
   jquery, 
   CSS3 animations 
 
-**** The Heroku asset pipeline has yet to be fixed as of June 6, 2014.   ****
+**** View this site on Heroku  : http://sheltered-wave-4997.herokuapp.com/    ****
 
-* Ruby 2.0.0
+* Site uses Ruby 2.0.0
 
